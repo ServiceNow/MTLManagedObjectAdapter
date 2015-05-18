@@ -740,7 +740,7 @@ static SEL MTLSelectorWithKeyPattern(NSString *key, const char *suffix) {
 
 		if (property == NULL) continue;
 
-		mtl_moa_propertyAttributes *attributes = mtl_moa_copyPropertyAttributes(property);
+		mtl_propertyAttributes *attributes = mtl_copyPropertyAttributes(property);
 		@onExit {
 			free(attributes);
 		};
